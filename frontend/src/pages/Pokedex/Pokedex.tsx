@@ -1,13 +1,14 @@
 import { Card } from "./components/Card";
+import { PokedexGrid } from "./styles";
 
 export function Pokedex() {
   return (
-    <div>
+    <PokedexGrid>
       <Card />
       <Card />  
       <Card />
       <Card />
       
-    </div>
+    </PokedexGrid>
   );
 }
