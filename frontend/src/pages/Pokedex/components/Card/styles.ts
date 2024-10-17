@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+interface CardContainerProps {
+  color: string;
+}
+
+export const CardContainer = styled.div<CardContainerProps>`
   width: 100%;
   border-radius: 8px;
   margin-top: 10px;
   height: 200px;
-  background: ${(props) => props.theme.bug};
+  background: ${(props) => props.theme[props.color]};
 
   & img {
     width: 8rem;
