@@ -21,6 +21,7 @@ export function Pokedex() {
       {pokemons.length > 0 ? (
         pokemons.map((pokemon) => (
           <Card
+            spriteShiny={pokemon.spriteShiny}
             key={pokemon.id}
             sprite={pokemon.sprite}
             name={pokemon.name}
