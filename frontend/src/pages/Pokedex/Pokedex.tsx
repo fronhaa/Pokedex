@@ -13,7 +13,6 @@ export function Pokedex() {
   const getPokemons = async () => {
     const response = await pokemonApi.getPokemon();
     setPokemons(response.data);
-    console.log(pokemons);
   };
 
   return (
