@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-import { Sparkle, Eye } from "@phosphor-icons/react";
+import { Sparkle } from "@phosphor-icons/react";
 
 const liftAndRotate = keyframes`
   0% {
@@ -40,9 +40,6 @@ export const SparkleStyled = styled(Sparkle)`
   cursor: pointer;
 `;
 
-export const EyeStyled = styled(Eye)`
-  color: ${(props) => props.theme["gray-900"]};
-`;
 
 export const CardContainer = styled.div<CardContainerProps>`
   width: 100%;
