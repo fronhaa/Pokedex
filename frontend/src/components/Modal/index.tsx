@@ -51,7 +51,7 @@ export function Modal({dataModal}: ModalProps) {
               <div><img src={dataModal.sprite} alt="" /></div>
               <div><img src={dataModal.spriteShiny} alt="" /></div>
               <div><BarChart categories={categories} data={data} /></div>
-              <div><h2>{dataModal.abilityNormal}</h2><h2>{dataModal.abilityHidden}</h2></div>
+              <div><h2>Normal: {dataModal.abilityNormal}</h2><h2>Hidden: {dataModal.abilityHidden}</h2></div>
             </GridContent>
           </ModalContent>
         </ModalContainer>
