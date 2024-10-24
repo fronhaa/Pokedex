@@ -32,6 +32,8 @@ export function Pokedex() {
             def={pokemon.def} 
             spdef={pokemon.spdef} 
             speed={pokemon.speed}
+            abilityHidden={pokemon.abilityHidden}
+            abilityNormal={pokemon.abilityNormal}
           />
         ))
       ) : (

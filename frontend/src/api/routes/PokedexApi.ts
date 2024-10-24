@@ -16,6 +16,8 @@ export interface PokemonType {
   def: number;
   spdef: number;
   speed: number;
+  abilityNormal: string;
+  abilityHidden: string;
 }
 
 // interface ParamsType {

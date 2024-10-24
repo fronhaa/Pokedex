@@ -16,6 +16,8 @@ interface ModalProps {
     speed: number;
     type2: BadgeType;
     name: string;
+    abilityNormal: string;
+    abilityHidden: string;
   }
 }
 
@@ -49,8 +51,7 @@ export function Modal({dataModal}: ModalProps) {
               <div><img src={dataModal.sprite} alt="" /></div>
               <div><img src={dataModal.spriteShiny} alt="" /></div>
               <div><BarChart categories={categories} data={data} /></div>
-              <div><img src={getBadgeUrl(dataModal.color)} />
-              {dataModal.type2 && <img src={getBadgeUrl(dataModal.type2)} />}</div>
+              <div><h2>{dataModal.abilityNormal}</h2><h2>{dataModal.abilityHidden}</h2></div>
             </GridContent>
           </ModalContent>
         </ModalContainer>

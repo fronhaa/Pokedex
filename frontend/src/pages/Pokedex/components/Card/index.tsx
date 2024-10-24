@@ -23,9 +23,11 @@ interface CardProps {
   def: number;
   spdef: number;
   speed: number;
+  abilityHidden: string;
+  abilityNormal: string;
 }
 
-export function Card({ sprite, name, type1, type2, spriteShiny, hp, atk, spatk, def, spdef, speed }: CardProps) {
+export function Card({ sprite, name, type1, type2, spriteShiny, hp, atk, spatk, def, spdef, speed, abilityHidden, abilityNormal }: CardProps) {
   const [isShiny, setIsShiny] = useState(false);
 
   const dataModal = {
@@ -39,7 +41,9 @@ export function Card({ sprite, name, type1, type2, spriteShiny, hp, atk, spatk, 
     spdef: spdef,
     speed: speed,
     type2: type2,
-    name: name
+    name: name,
+    abilityHidden: abilityHidden,
+    abilityNormal: abilityNormal
   };
 
   return (
