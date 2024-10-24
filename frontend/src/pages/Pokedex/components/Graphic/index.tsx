@@ -7,7 +7,7 @@ interface BarChartProps {
 }
 
 export const BarChart = ({ categories, data }: BarChartProps) => {
-    
+
   const colorsArray = ['#F44336', '#E91E63', '#9C27B0', '#FF9800', '#4CAF50', '#2196F3'];
   const [chartData] = useState<any>({
     options: {
@@ -20,7 +20,6 @@ export const BarChart = ({ categories, data }: BarChartProps) => {
       plotOptions: {
         bar: {
             horizontal: true,
-            barHeight: '50%',
             borderRadius: 4
         }
       },
