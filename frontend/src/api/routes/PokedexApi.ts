@@ -10,6 +10,12 @@ export interface PokemonType {
   spriteShiny: string;
   type1: BadgeType;
   type2: BadgeType;
+  hp: number;
+  atk: number;
+  spatk: number;
+  def: number;
+  spdef: number;
+  speed: number;
 }
 
 // interface ParamsType {

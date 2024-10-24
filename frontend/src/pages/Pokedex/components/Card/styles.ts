@@ -35,6 +35,10 @@ interface CardContainerProps {
   $isShiny: boolean;
 }
 
+interface ImgPokemonProps {
+  $isShiny: boolean;
+}
+
 export const SparkleStyled = styled(Sparkle)`
   color: ${(props) => props.theme["gray-900"]};
   cursor: pointer;
@@ -56,7 +60,9 @@ export const CardContainer = styled.div<CardContainerProps>`
       transform: scale(1.3);
     }
   }
+`;
 
+export const ImgPokemon = styled.img<ImgPokemonProps>`
   ${(props) =>
     props.$isShiny &&
     css`
